@@ -1,6 +1,6 @@
 # proof-trace: Extracting Self-Contained Theorems and Proofs from Lean 4
 
-This is a tool to extract intermediate goals from typed lean proofs and represent them as self-contained theorems with their corresponding proofs. It also includes a utility for sampling theorems from Lean libraries (e.g. Mathlib).
+This is a tool (work in progress) to extract intermediate goals from typed lean proofs and represent them as self-contained theorems with their corresponding proofs. It also includes a utility for sampling theorems from Lean libraries (e.g. Mathlib).
 
 ## Prerequisites
 
