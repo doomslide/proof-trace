@@ -23,10 +23,6 @@ This is a tool to extract intermediate goals from typed lean proofs and represen
 3.  **Build Lean Executables:** Compile the tools. The `proofTrace` executable is a default target.
     ```bash
     lake build
-    # This will build all default targets, including proofTrace.
-    # To build specific executables:
-    # lake build proofTrace
-    # lake build sampleProofs
     ```
 
 ## Overview of Tools
