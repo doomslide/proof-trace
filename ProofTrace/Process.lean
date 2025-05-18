@@ -76,7 +76,6 @@ def formatSyntheticTheorem (state : FinalGoalState) : MetaM Json := do
   let contextStrings ← lctxToString state.lctx
   let goalStr ← ppExprWithCtx state.lctx #[] state.typeExpr
   let proofStr ← ppExprWithCtx state.lctx #[] state.proofExpr
-  let distractorsStr : Array String := #[] -- Placeholder
 
   -- 6. Construct JsonSyntheticTheorem
   let jsonData : JsonSyntheticTheorem := {
@@ -86,7 +85,6 @@ def formatSyntheticTheorem (state : FinalGoalState) : MetaM Json := do
       primitives    := primitivesJson,
       sourceDecl    := state.declName.toString,
       proof         := proofStr,
-      distractors   := distractorsStr,
       prettyProof   := proofStr,
       leanVersion   := state.leanVersion,
       mathlibVersion:= state.mathlibVersion,

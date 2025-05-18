@@ -151,9 +151,6 @@ Let's break down the fields of a typical JSON object from the output. Each line 
     ]
   },
 
-  "_comment": "For potential distractor/related-but-incorrect proof terms. (Not implemented here.)"
-  "distractors": [],
-
   "_comment": "Lean version used during processing."
   "leanVersion": "4.20.0-rc5",
 

@@ -62,7 +62,6 @@ structure JsonSyntheticTheorem where
   primitives    : Json
   sourceDecl    : String
   proof         : String
-  distractors   : Array String
   prettyProof   : String
   leanVersion   : String
   mathlibVersion: String
