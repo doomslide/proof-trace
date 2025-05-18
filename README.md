@@ -106,35 +106,33 @@ After running the command, the `examples/jsonl/test1_out.jsonl` file will be gen
 
 **Understanding the Output Fields:**
 
-Let's break down the fields of a typical JSON object from the output. Each line in the `.jsonl` file is a similar JSON object:
+Let's break down the fields of a typical JSON object from the output. Each line in the `.jsonl` file is a similar JSON object (`_comment` fields are purely pedagogical and do not appear in the actual file ^^).
 
 ```json
 {
-  // A unique identifier for this proof state/goal.
+  "_comment": "A unique identifier for this proof state/goal."
   "syntheticName": "add_assoc_example_goal_goal_12739406252616973674",
 
-  // Original theorem/declaration name in the source file.
+  "_comment": "Original theorem/declaration name in the source file."
   "sourceDecl": "add_assoc_example",
 
-  // Active local context (hypotheses, variables) for this proof state.
+  "_comment": "Active local context (hypotheses, variables) for this proof state."
   "context": [
     "(a : ℕ)",
     "(b : ℕ)",
     "(c : ℕ)"
   ],
 
-  // Goal statement to be proven at this proof stage.
+  "_comment": "Goal statement to be proven at this proof stage."
   "goal": "a + (b + c) = a + (b + c)",
 
-  // Lean proof term for the `goal` in its `context`.
+  "_comment": "Lean proof term for the `goal` in its `context`."
   "proof": "Eq.refl (a + (b + c))",
 
-  // Prettified version of the `proof` term (often identical).
+  "_comment": "Prettified version of the `proof` term (often identical)."
   "prettyProof": "Eq.refl (a + (b + c))",
 
-  // Definitions, theorems, and axioms that `proof` and `goal` depend on.
-  // These are the "primitive" elements for this self-contained proof.
-  // Each includes its name, type, kind (def, thm, etc.), and sometimes value/constructors.
+  "_comment": "Definitions, theorems, and axioms that `proof` and `goal` depend on."
   "primitives": {
     "primitives": [
       {
@@ -149,20 +147,20 @@ Let's break down the fields of a typical JSON object from the output. Each line 
         "name": "instHAdd",
         "kind": "definition"
       }
-      // ... (list continues with other primitive objects)
+      "_comment": (list continues with other primitive objects)
     ]
   },
 
-  // For potential distractor/related-but-incorrect proof terms. (Not implemented here.)
+  "_comment": "For potential distractor/related-but-incorrect proof terms. (Not implemented here.)"
   "distractors": [],
 
-  // Lean version used during processing.
+  "_comment": "Lean version used during processing."
   "leanVersion": "4.20.0-rc5",
 
-  // Detected Mathlib version (if found).
+  "_comment": "Detected Mathlib version (if found)."
   "mathlibVersion": "unknown (mathlib package not found)",
 
-  // Placeholder for exact original source module path (not yet implemented).
+  "_comment": "Placeholder for exact original source module path (not yet implemented)."
   "originalSource": "[source extraction not implemented]"
 }
 ```

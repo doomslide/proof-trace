@@ -107,7 +107,6 @@ def sampleTheorems (numSamples : Nat) (subLibPrefix : String) (outFile : System.
             primitives    := primitivesJson,
             sourceDecl    := thmName.toString,
             proof         := proofStr,
-            distractors   := #[],
             prettyProof   := proofStr,
             leanVersion   := leanVersion,
             mathlibVersion:= mathlibVersion,
