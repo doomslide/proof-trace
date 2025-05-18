@@ -183,4 +183,4 @@ To sample 10 theorems from Mathlib (WARNING: output will be HUGE) modules starti
 ```bash
 lake exe sampleProofs -- 10 Mathlib.Data.Nat output/sampled_nat_theorems.jsonl
 ```
-This command will load the necessary parts of `Mathlib`, find theorems in modules like `Mathlib.Data.Nat.Basic`, `Mathlib.Data.Nat.Prime`, etc., and write the data for up to 100 of them into the specified output file. The output format for each theorem will be similar to the JSON objects described in the `proofTrace` example.
+The command loads Mathlib modules matching the prefix, extracts theorems from them, and writes to the output file in the same JSON format as proofTrace.
