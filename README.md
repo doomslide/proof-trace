@@ -147,7 +147,7 @@ Let's break down the fields of a typical JSON object from the output. Each line 
         "name": "instHAdd",
         "kind": "definition"
       }
-      "_comment": (list continues with other primitive objects)
+      "_comment": "... the list continues with other primitive objects..."
     ]
   },
 
